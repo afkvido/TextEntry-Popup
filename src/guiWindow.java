@@ -20,14 +20,14 @@ public class guiWindow {
 
 
         //Create and set up the window.
-        frame = new JFrame("MessageEngine");
+        frame = new JFrame("Commit & Push");
 
-
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setPreferredSize(new Dimension(500, 300));
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
         // Text Label
-        textLabel = new JLabel("<html>Enter text.<p/><html/>", SwingConstants.CENTER);
+        textLabel = new JLabel("<html>Enter commit message.<html/>", SwingConstants.CENTER);
         textLabel.setPreferredSize(new Dimension(300, 100));
         frame.getContentPane().add(textLabel, BorderLayout.NORTH);
 
@@ -39,9 +39,23 @@ public class guiWindow {
 
 
         // Button
-        button = new JButton("Input message");
+        button = new JButton("Commit");
         button.setPreferredSize(new Dimension(300, 100));
         frame.getContentPane().add(button, BorderLayout.SOUTH);
+
+        button.addActionListener(e -> {
+
+            Main.commit_message = textField.getText();
+
+
+            try {
+                Main.finish();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+
+
+        });
 
 
 
@@ -72,5 +86,8 @@ public class guiWindow {
     public guiWindow () {
         createWindow();
     }
+
+
+
 
 }
