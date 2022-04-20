@@ -51,11 +51,7 @@ public class Main {
                 e.button.setText("Committing...");
                 e.frame.pack(); e.frame.update(e.frame.getGraphics());
                 Process commit = Runtime.getRuntime().exec("git commit -m " + commit_message + "");
-
-                while (commit.isAlive()) {
-                    Thread.sleep(1000);
-                }
-
+                Thread.sleep(1000);
                 committing_done = true;
 
 
