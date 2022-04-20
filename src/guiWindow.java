@@ -8,7 +8,7 @@ public class guiWindow {
 
     protected JTextField textField;
 
-    protected JButton button;
+    public JButton button;
 
     protected Boolean built;
 
