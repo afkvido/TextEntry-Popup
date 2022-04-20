@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TextEntry-Popup:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TextEntry_Popup_jar</output-path>
+    <root id="archive" name="TextEntry-Popup.jar">
+      <element id="module-output" name="TextEntry-Popup" />
+    </root>
+  </artifact>
+</component>
