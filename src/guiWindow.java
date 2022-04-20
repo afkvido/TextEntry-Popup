@@ -10,6 +10,7 @@ public class guiWindow {
 
     public JButton button;
 
+
     protected Boolean built;
 
     protected JFrame frame;
