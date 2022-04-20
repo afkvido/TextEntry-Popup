@@ -45,7 +45,12 @@ public class guiWindow {
 
         button.addActionListener(e -> {
 
+
             Main.commit_message = textField.getText();
+
+
+
+
 
 
             try {
