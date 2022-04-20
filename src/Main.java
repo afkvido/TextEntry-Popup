@@ -100,7 +100,7 @@ public class Main {
                 break;
             }
 
-            Thread.sleep(1000);
+            Thread.sleep(4000);
     }
 
 
