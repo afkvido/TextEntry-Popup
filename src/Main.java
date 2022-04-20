@@ -21,7 +21,6 @@ public class Main {
         e.button.setText("Committing...");
         e.frame.getContentPane().update(e.frame.getGraphics());
         Process c = Runtime.getRuntime().exec("git commit -m \"" + commit_message + "\"");
-        System.out.println("git commit -m \"" + commit_message + "\"");
         c.waitFor();
 
         e.button.setText("Pushing...");

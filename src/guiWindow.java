@@ -28,7 +28,7 @@ public class guiWindow {
 
 
         // Text Label
-        textLabel = new JLabel("<html>Enter commit message.<html/>", SwingConstants.CENTER);
+        textLabel = new JLabel("<html><b>CURRENT BUG: SPACES GLITCH OUT TEXTENTRY.</b><p/>Enter commit message.<html/>", SwingConstants.CENTER);
         textLabel.setPreferredSize(new Dimension(300, 100));
         frame.getContentPane().add(textLabel, BorderLayout.NORTH);
 
