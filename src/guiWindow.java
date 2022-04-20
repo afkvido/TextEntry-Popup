@@ -39,7 +39,7 @@ public class guiWindow {
 
 
         // Button
-        button = new JButton("Commit");
+        button = new JButton("Commit & Push");
         button.setPreferredSize(new Dimension(300, 100));
         frame.getContentPane().add(button, BorderLayout.SOUTH);
 

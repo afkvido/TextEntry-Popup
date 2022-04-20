@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Added all files to git");
 
 
-        Runtime.getRuntime().exec("git commit -m \"" + commit_message + "\"");
+        Runtime.getRuntime().exec("git commit -m " + commit_message + "");
         System.out.println("Committed all files to git repository");
 
 
