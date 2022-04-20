@@ -29,6 +29,7 @@ public class Main {
 
         Thread _add = new Thread(() -> {
             try {
+                Thread.sleep(2000);
                 e.button.setText("Adding...");
                 e.frame.pack();
                 e.frame.update(e.frame.getGraphics());
@@ -48,6 +49,7 @@ public class Main {
 
         Thread _commit = new Thread(() -> {
             try {
+                Thread.sleep(2000);
                 e.button.setText("Committing...");
                 e.frame.pack(); e.frame.update(e.frame.getGraphics());
                 Process commit = Runtime.getRuntime().exec("git commit -m " + commit_message + "");
@@ -60,11 +62,12 @@ public class Main {
 
         Thread _push = new Thread(() -> {
             try {
+                Thread.sleep(2000);
                 e.button.setText("Pushing...");
                 e.frame.pack();
                 e.frame.update(e.frame.getGraphics());
                 Process push = Runtime.getRuntime().exec("git push origin master");
-                Thread.sleep(2000);
+                Thread.sleep(3000);
 
                 pushing_done = true;
 
